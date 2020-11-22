@@ -1,0 +1,1 @@
+$('.burger-menu').on('click', () => console.log('hello!'));

@@ -1,129 +1,153 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body{
-    font-family: 'Rubik', sans-serif;
+  font-family: 'Rubik', sans-serif;
+  overflow-x: hidden;
 }
 header{
-    padding: 20px;
-    background: #000;
-    color: #fff;
-    letter-spacing: 2px;
-}
-section{
-    padding: 20px;
-    background: #fff;
-    display: flex;
-}
-section#video{
-    background: #000;
-    height: 50vh;
+  padding: 20px;
+  background: #000;
+  color: #fff;
+  letter-spacing: 2px;}
+nav{
+  /* display: none; */
 }
 
-.content{
-    padding: 10px;
+.burger-menu{
+  display: none;
+  position: relative;
+  cursor: pointer;
+}
+.burger-menu .burger{
+  position: relative;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  width: 35px;
+  height: 5px;
+  margin-bottom: 4px;
+  background: #fff;
+}
+
+
+section{
+  padding: 20px;
+  background: #fff;
+  display: flex;
+}
+section#video{
+  background: #000;
+  height: 50vh;
+}
+
+.contentbox{
+  padding: 10px;
 }
 .aboutme{
-    padding: 20px;
+  display: block;
+  height: 500px;
 }
-div{
-    width: 33.3%;
-    margin: 0px auto;
-    margin-right: 10px;
-    background: grey;
-    padding: 50px;
+.content{
+  width: 33.3%;
+  height: 200px;
+  margin: 0px auto;
+  margin-right: 10px;
+  background: grey;
+  padding: 50px;
 }
-div:nth-child(3){
-    margin-right: 0;
+.content:nth-child(3){
+  margin-right: 0;
 }
 ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-align: right;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: right;
 }
 li{
-    display: inline-block;
-    padding: 0px 20px 0px 20px;
+  display: inline-block;
+  padding: 0px 20px 0px 20px;
 }
 video{
-    object-fit: cover;
+  object-fit: cover;
 }
 footer{
-    padding: 20px;
-    background: #000;
-    color: #fff;
+  padding: 20px;
+  background: #000;
+  color: #fff;
+  height: 200px;
 }
 
 h1 {
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-155px);
-    width: 100%;
-    text-align: center;
-    color: #ddd;
-    font-size: 3em;
-    font-family: 'Rubik', sans-serif;
-    letter-spacing: 0.2em;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-155px);
+  width: 100%;
+  text-align: center;
+  color: #ddd;
+  font-size: 3em;
+  font-family: 'Rubik', sans-serif;
+  letter-spacing: 0.2em;
 }
 h1 span{
-    opacity: 0;
-    display: inline-block;
-    animation: animate 1s linear forwards;
+  opacity: 0;
+  display: inline-block;
+  animation: animate 1s linear forwards;
 }
 
 h1 span:nth-child(1){
-    animation-delay: .5s; 
+  animation-delay: .5s; 
 }
 h1 span:nth-child(2){
-    animation-delay: 1s; 
+  animation-delay: 1s; 
 }
 h1 span:nth-child(3){
-    animation-delay: 1.25s; 
+  animation-delay: 1.25s; 
 }
 h1 span:nth-child(4){
-    animation-delay: 1.5s; 
+  animation-delay: 1.5s; 
 }
 h1 span:nth-child(5){
-    animation-delay: 1.75s; 
+  animation-delay: 1.75s; 
 }
 h1 span:nth-child(6){
-    animation-delay: 2.5s; 
+  animation-delay: 2.5s; 
 }
 h1 span:nth-child(8){
-    animation-delay: 2.9s; 
+  animation-delay: 2.9s; 
 }
 h1 span:nth-child(9){
-    animation-delay: 3s; 
+  animation-delay: 3s; 
 }
 h1 span:nth-child(10){
-    animation-delay: 3.255s; 
+  animation-delay: 3.255s; 
 }
 h1 span:nth-child(11){
-    animation-delay: 3.5s; 
+  animation-delay: 3.5s; 
 }
 h1 span:nth-child(12){
-    animation-delay: 3.75s; 
+  animation-delay: 3.75s; 
 }
 
 
 @keyframes animate{
-    0%{
-        opacity: 0;
-        transform: rotateY(180deg);
-        filter: blur(20px);
-    }
-    100%{
-        opacity:1;
-        transform: rotateY(0deg);
-        filter: blur(0px);
-    }
+  0%{
+      opacity: 0;
+      transform: rotateY(180deg);
+      filter: blur(20px);
+  }
+  100%{
+      opacity:1;
+      transform: rotateY(0deg);
+      filter: blur(0px);
+  }
 }
 
- #video{
-     height: 50vh;
- }
+#video{
+    height: 50vh;
+}
