@@ -52,6 +52,7 @@ section#video{
 }
 .content{
   width: 33.3%;
+  min-width: 260px;
   height: 200px;
   margin: 0px auto;
   margin-right: 10px;
