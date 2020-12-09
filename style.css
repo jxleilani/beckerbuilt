@@ -12,9 +12,6 @@ header{
   background: #000;
   color: #fff;
   letter-spacing: 2px;}
-nav{
-  /* display: none; */
-}
 
 .burger-menu{
   display: none;
@@ -31,7 +28,6 @@ nav{
   margin-bottom: 4px;
   background: #fff;
 }
-
 
 section{
   padding: 20px;
@@ -110,6 +106,9 @@ footer{
   color: #fff;
   height: 200px;
 }
+.social{
+  text-align: center;
+}
 
 h1 {
   margin: 0;
@@ -148,6 +147,9 @@ h1 span:nth-child(5){
 h1 span:nth-child(6){
   animation-delay: 2.5s; 
 }
+h1 span:nth-child(7){
+  animation-delay: 2.75s; 
+}
 h1 span:nth-child(8){
   animation-delay: 2.9s; 
 }
@@ -164,7 +166,6 @@ h1 span:nth-child(12){
   animation-delay: 3.75s; 
 }
 
-
 @keyframes animate{
   0%{
       opacity: 0;
@@ -180,4 +181,62 @@ h1 span:nth-child(12){
 
 #video{
     height: 50vh;
+}
+
+@media screen and (max-width: 768px){
+  .nav-links{
+    opacity: 0;
+    font-size: 25px;
+  }
+  .nav-links.open{
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #000;
+    z-index: 100;
+    opacity: 1;
+  }
+  .nav-links li{
+    opacity: 0;
+  }
+  .nav-links li.fade{
+    opacity: 1;
+  }
+  .nav-links li:nth-child(1){
+    transition: all 3s ease 0.25s;
+  }
+  .nav-links li:nth-child(2){
+    transition: all 4s ease .75s;
+  }
+  .nav-links li:nth-child(3){
+    transition: all 5s ease 1.25s;
+  }
+  .burger-menu{
+    display: block;
+    position: fixed;
+    top: 3%;
+    left: 3%;
+    z-index: 100;
+  }
+  video{
+    display: none;
+  }
+  #video h1 span{
+    font-size: 40px;
+  }
+  h1 span:nth-child(7){
+    display: flex;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  #video h1{
+    top: 40%;
+  }
 }
